@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BD726021CF77DD1005DBD79 /* RNCookieManagerIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD726011CF77DD1005DBD79 /* RNCookieManagerIOS.m */; };
+		11D7E0841D3CCF8900F0EC0F /* RNCookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD726011CF77DD1005DBD79 /* RNCookieManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1BD725DA1CF77A8B005DBD79 /* libRNCookieManagerIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCookieManagerIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BD726001CF77DD1005DBD79 /* RNCookieManagerIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCookieManagerIOS.h; sourceTree = "<group>"; };
-		1BD726011CF77DD1005DBD79 /* RNCookieManagerIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCookieManagerIOS.m; sourceTree = "<group>"; };
+		1BD725DA1CF77A8B005DBD79 /* libRNCookieManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCookieManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD726001CF77DD1005DBD79 /* RNCookieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCookieManager.h; sourceTree = "<group>"; };
+		1BD726011CF77DD1005DBD79 /* RNCookieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCookieManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,8 @@
 		1BD725CD1CF7795C005DBD79 = {
 			isa = PBXGroup;
 			children = (
-				1BD725FF1CF77DD1005DBD79 /* RNCookieManagerIOS */,
+				1BD726001CF77DD1005DBD79 /* RNCookieManager.h */,
+				1BD726011CF77DD1005DBD79 /* RNCookieManager.m */,
 				1BD725DB1CF77A8B005DBD79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,26 +51,17 @@
 		1BD725DB1CF77A8B005DBD79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BD725DA1CF77A8B005DBD79 /* libRNCookieManagerIOS.a */,
+				1BD725DA1CF77A8B005DBD79 /* libRNCookieManager.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1BD725FF1CF77DD1005DBD79 /* RNCookieManagerIOS */ = {
-			isa = PBXGroup;
-			children = (
-				1BD726001CF77DD1005DBD79 /* RNCookieManagerIOS.h */,
-				1BD726011CF77DD1005DBD79 /* RNCookieManagerIOS.m */,
-			);
-			path = RNCookieManagerIOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1BD725D91CF77A8B005DBD79 /* RNCookieManagerIOS */ = {
+		1BD725D91CF77A8B005DBD79 /* RNCookieManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BD725E31CF77A8B005DBD79 /* Build configuration list for PBXNativeTarget "RNCookieManagerIOS" */;
+			buildConfigurationList = 1BD725E31CF77A8B005DBD79 /* Build configuration list for PBXNativeTarget "RNCookieManager" */;
 			buildPhases = (
 				1BD725D61CF77A8B005DBD79 /* Sources */,
 				1BD725D71CF77A8B005DBD79 /* Frameworks */,
@@ -79,9 +71,9 @@
 			);
 			dependencies = (
 			);
-			name = RNCookieManagerIOS;
+			name = RNCookieManager;
 			productName = RNCookieManagerIOS;
-			productReference = 1BD725DA1CF77A8B005DBD79 /* libRNCookieManagerIOS.a */;
+			productReference = 1BD725DA1CF77A8B005DBD79 /* libRNCookieManager.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +89,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1BD725D11CF7795C005DBD79 /* Build configuration list for PBXProject "RNCookieManagerIOS" */;
+			buildConfigurationList = 1BD725D11CF7795C005DBD79 /* Build configuration list for PBXProject "RNCookieManager" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -109,7 +101,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BD725D91CF77A8B005DBD79 /* RNCookieManagerIOS */,
+				1BD725D91CF77A8B005DBD79 /* RNCookieManager */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +111,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BD726021CF77DD1005DBD79 /* RNCookieManagerIOS.m in Sources */,
+				11D7E0841D3CCF8900F0EC0F /* RNCookieManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +133,7 @@
 		1BD725E11CF77A8B005DBD79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -156,18 +148,10 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/../../React/**",
-					"$(inherited)",
-					"$(SRCROOT)/node_modules/react-native/React/**",
-					"$(SRCROOT)/../react-native/React/**",
-					"$(SRCROOT)/../../../node_modules/react-native/React/**",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -182,27 +166,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../React/**",
-					"$(inherited)",
-					"$(SRCROOT)/node_modules/react-native/React/**",
-					"$(SRCROOT)/../react-native/React/**",
-					"$(SRCROOT)/../../../node_modules/react-native/React/**",
-				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RNCookieManager;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/**";
 			};
 			name = Debug;
 		};
 		1BD725E21CF77A8B005DBD79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -217,18 +196,10 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/../../React/**",
-					"$(inherited)",
-					"$(SRCROOT)/node_modules/react-native/React/**",
-					"$(SRCROOT)/../react-native/React/**",
-					"$(SRCROOT)/../../../node_modules/react-native/React/**",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -237,19 +208,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../React/**",
-					"$(inherited)",
-					"$(SRCROOT)/node_modules/react-native/React/**",
-					"$(SRCROOT)/../react-native/React/**",
-					"$(SRCROOT)/../../../node_modules/react-native/React/**",
-				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RNCookieManager;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -257,7 +223,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BD725D11CF7795C005DBD79 /* Build configuration list for PBXProject "RNCookieManagerIOS" */ = {
+		1BD725D11CF7795C005DBD79 /* Build configuration list for PBXProject "RNCookieManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BD725D21CF7795C005DBD79 /* Debug */,
@@ -266,13 +232,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BD725E31CF77A8B005DBD79 /* Build configuration list for PBXNativeTarget "RNCookieManagerIOS" */ = {
+		1BD725E31CF77A8B005DBD79 /* Build configuration list for PBXNativeTarget "RNCookieManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BD725E11CF77A8B005DBD79 /* Debug */,
 				1BD725E21CF77A8B005DBD79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
