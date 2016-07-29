@@ -11,15 +11,17 @@ exports.get = function(name) {
   return RNCookieManager.get(name);
 };
 
-exports.set = function(name, value, expires) {
+exports.set = function(name, value, maxAge) {
   assertType(name, String);
   assertType(value, String);
-  assertType(expires, [Number, Void]);
-  expires = String(expires);
+  assertType(maxAge, [Number, Void]);
+  if (maxAge !== void 0) {
+    maxAge = String(maxAge);
+  }
   return RNCookieManager.set({
     name: name,
     value: value,
-    expires: expires
+    maxAge: maxAge
   });
 };
 
