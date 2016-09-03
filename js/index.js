@@ -1,8 +1,10 @@
-var RNCookieManager, Void, assertType;
+var RNCookieManager, Typle, Void, assertType;
 
 RNCookieManager = require("NativeModules").RNCookieManager;
 
 assertType = require("assertType");
+
+Typle = require("Typle");
 
 Void = require("Void");
 
@@ -14,7 +16,7 @@ exports.get = function(name) {
 exports.set = function(name, value, maxAge) {
   assertType(name, String);
   assertType(value, String);
-  assertType(maxAge, [Number, Void]);
+  assertType(maxAge, Typle([Number, Void]));
   if (maxAge !== void 0) {
     maxAge = String(maxAge);
   }

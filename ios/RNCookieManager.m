@@ -30,6 +30,9 @@ RCT_EXPORT_METHOD(get:(NSString *)cookieName
                   resolve:(RCTPromiseResolveBlock)resolve
                   reject:(__unused RCTPromiseRejectBlock)reject)
 {
+#if RCT_DEV
+  NSLog(@"Getting cookie: %@", cookieName);
+#endif
   NSHTTPCookie *cookie = _cookies[cookieName];
   if (cookie) {
     resolve(cookie.value);
@@ -59,6 +62,9 @@ RCT_EXPORT_METHOD(set:(NSDictionary *)props
   NSHTTPCookie *cookie = [NSHTTPCookie cookieWithProperties:cookieProps];
   [storage setCookie:_cookies[cookieName] = cookie];
 
+#if RCT_DEV
+  NSLog(@"Setting cookie: %@", cookieName);
+#endif
   resolve(nil);
 }
 

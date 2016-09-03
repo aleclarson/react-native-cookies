@@ -11,6 +11,7 @@
     ]
   },
   "dependencies": {
+    "Typle": "aleclarson/Typle#1.0.0",
     "Void": "aleclarson/Void#1.0.0",
     "assertType": "aleclarson/assertType#2.0.0"
   }

@@ -2,6 +2,7 @@
 { RNCookieManager } = require "NativeModules"
 
 assertType = require "assertType"
+Typle = require "Typle"
 Void = require "Void"
 
 exports.get = (name) ->
@@ -11,7 +12,7 @@ exports.get = (name) ->
 exports.set = (name, value, maxAge) ->
   assertType name, String
   assertType value, String
-  assertType maxAge, [ Number, Void ]
+  assertType maxAge, Typle [ Number, Void ]
   maxAge = String maxAge if maxAge isnt undefined
   RNCookieManager.set { name, value, maxAge }
 
