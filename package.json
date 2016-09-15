@@ -2,17 +2,23 @@
   "name": "react-native-cookies",
   "version": "2.0.0",
   "main": "js/index",
-  "lotus": {
-    "plugins": [
-      "lotus-coffee"
-    ],
-    "implicitDependencies": [
-      "NativeModules"
-    ]
+  "plugins": [
+    "lotus-coffee"
+  ],
+  "scripts": {
+    "build": "coffee -cb -o js src",
+    "postinstall": "postinstall-build js 'npm run build'"
   },
   "dependencies": {
     "Typle": "aleclarson/Typle#1.0.0",
     "Void": "aleclarson/Void#1.0.0",
-    "assertType": "aleclarson/assertType#2.0.0"
-  }
+    "assertType": "aleclarson/assertType#2.0.0",
+    "postinstall-build": "0.2.x"
+  },
+  "devDependencies": {
+    "coffee-script": "1.9.x"
+  },
+  "implicitDependencies": [
+    "NativeModules"
+  ]
 }
